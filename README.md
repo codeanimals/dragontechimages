@@ -5,10 +5,11 @@ environment variable (namely WEB_DIR_ABSOLUTE_PATH).  Also note that this is cur
 written for Windows Server, so you may want to Linux up the path concatenation.  Of course,
 you could also use the resource loader and go that route.
 
-Note that if you deploy as an exploded .WAR, you can drop images into your pics folder without
-restarting, but you'll have to hard-refresh the page.  Call it a TODO item to improve that.
+You need to deploy this as an exploded .WAR, so you can drop images into your pics folder without
+restarting.  An AJAX call will be made from index.jsp every few seconds to see if images have
+been added.  Deleted images will not be noticed (yet) but of course will not show up if the
+client hard refreshes or uncaches.
 
-This project is in early stages, so using a .JSP for dev purposes.
 
 A working version is at http://www.dragon.tech although expect the site to be up and down during development.
 

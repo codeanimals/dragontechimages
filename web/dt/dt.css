@@ -1,0 +1,8 @@
+.lead-text-style
+{
+    color: white; background: #000000; font-family: "Helvetic Neue", Helvetica, Arial; font-size: larger; height: 100px;
+}
+
+body {
+    background-color: black;
+}
